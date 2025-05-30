@@ -1,0 +1,9 @@
+.project_form {
+    justify-content: center;
+    width: 100%;
+    margin: 2em 0;
+}
+
+.project_form div {
+    margin-bottom: 1em;
+}
