@@ -16,6 +16,7 @@
 }
 
 .item a {
+    transition: 0.5s;
     color: #fff;
     text-decoration: none
 }
