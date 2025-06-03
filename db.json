@@ -1,21 +1,33 @@
 {
-    "projects": [],
-    "categories": [
-        {
-            "id": 1,
-            "name": "Infra"
-        },
-        {
-            "id": 2,
-            "name": "Development"
-        },
-        {
-            "id": 3,
-            "name": "Design"
-        },
-        {
-            "id": 4,
-            "name": "Planning"
-        }
-    ]
+  "projects": [
+    {
+      "id": "ff14",
+      "category": {
+        "id": "1",
+        "name": "Infra"
+      },
+      "name": "Project Test",
+      "budget": "4500",
+      "cost": 0,
+      "services": []
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Infra"
+    },
+    {
+      "id": "2",
+      "name": "Development"
+    },
+    {
+      "id": "3",
+      "name": "Design"
+    },
+    {
+      "id": "4",
+      "name": "Planning"
+    }
+  ]
 }
