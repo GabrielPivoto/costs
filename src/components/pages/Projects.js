@@ -1,21 +1,31 @@
 import { useLocation } from "react-router-dom"
 
-import Message from "../layouts/Message"
+import styles from './Projects.module.css'
 
-function Projects(){
+import Message from "../layouts/Message"
+import LinkButton from '../layouts/LinkButton'
+import Container from '../layouts/Container'
+
+function Projects() {
 
     const location = useLocation()
     let message = ''
-    if(location.state) {
+    if (location.state) {
         message = location.state.message
     }
 
     return (
-        <div>
-            <h1>Projects</h1>
+        <div className={styles.project_container}>
+            <div className={styles.title_container}>
+                <h1>Projects</h1>
+                <LinkButton to="/newProject" text="New Project"/>
+            </div>
             {message && (
-                <Message type="success" message={message}/>
+                <Message type="success" message={message} />
             )}
+            <Container customClass="start">
+                <p>Projects...</p>
+            </Container>
         </div>
     )
 }
