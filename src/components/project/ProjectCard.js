@@ -5,6 +5,11 @@ import styles from './ProjectCard.module.css'
 
 function ProjectCard({ id, projectName, budget, category, handleRemove }) {
 
+    const remove = (e) => {
+        e.preventDefault()
+        handleRemove(id)
+    }
+
     return (
         <div className={styles.project_card}>
             <h4>{projectName}</h4>
@@ -18,7 +23,7 @@ function ProjectCard({ id, projectName, budget, category, handleRemove }) {
                 <Link to="/">
                     <BsPencil/> Edit
                 </Link>
-                <button>
+                <button onClick={remove}>
                     <BsFillTrashFill/> Delete
                 </button>
             </div>
