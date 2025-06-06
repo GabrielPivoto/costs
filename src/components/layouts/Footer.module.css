@@ -12,6 +12,7 @@
 }
 
 .social_media_list li{
+    transition: 0.5s;
     margin: 0 1em;
 }
 
